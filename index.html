@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Slate — AI-powered modest fashion discovery</title>
+  <meta name="description" content="Slate finds affordable modest outfits across 60,000+ mainstream and modest brands.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Outfit:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-star" viewBox="0 0 16 16"><path d="M7.05 1.6a1.05 1.05 0 0 1 1.9 0l1.53 3.27 3.58.43c.88.1 1.24 1.2.59 1.8l-2.64 2.46.69 3.54c.17.87-.76 1.54-1.53 1.11L8 12.46l-3.17 1.75c-.77.43-1.7-.24-1.53-1.1l.69-3.55L1.35 7.1c-.65-.6-.29-1.69.59-1.8l3.58-.43L7.05 1.6Z" fill="currentColor"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 20 20"><path d="M10.6 3.3a.9.9 0 0 1 1.3 0l6.1 6.1a.9.9 0 0 1 0 1.3l-6.1 6.1a.9.9 0 1 1-1.3-1.3l4.6-4.6H2.9a.9.9 0 1 1 0-1.8h12.3l-4.6-4.6a.9.9 0 0 1 0-1.3Z" fill="currentColor"/></symbol>
+  </svg>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__pill">
+      <a href="#top" class="nav__logo" aria-label="Slate home"><img src="assets/svg/logo-wordmark-white.svg" alt="Slate" width="59" height="21"></a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav__menu" id="navMenu" aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#support">Support</a>
+      <a href="#faq">FAQs</a>
+      <a href="#get-started" class="nav__menu-cta">Get started</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <div class="hero__text">
+          <p class="hero__eyebrow">
+            <img src="assets/img/laurel.webp" alt="" width="11" height="20">
+            <span>Trusted by 1 million+ modest fashion shoppers</span>
+            <img src="assets/img/laurel.webp" alt="" width="11" height="20" class="flip">
+          </p>
+          <h1 class="hero__title">Discover <em>modest fashion</em><br>made for You</h1>
+          <p class="hero__sub">Slate finds affordable modest outfits across 60,000+ mainstream and modest brands</p>
+        </div>
+
+        <div class="hero__actions">
+          <a href="#get-started" class="btn-hero">
+            Curate my modest fits
+            <svg width="20" height="20"><use href="#i-arrow"/></svg>
+          </a>
+          <div class="proof">
+            <div class="proof__avatars">
+              <img src="assets/img/avatar-hero-1.webp" alt="" width="40" height="40">
+              <img src="assets/img/avatar-hero-2.webp" alt="" width="40" height="40">
+              <img src="assets/img/avatar-hero-3.webp" alt="" width="40" height="40">
+            </div>
+            <p><strong>5,512</strong> modest fits saved by<br>women in the last <strong>48 hours</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product showcase -->
+      <div class="showcase" id="showcase">
+        <div class="showcase__stage">
+
+          <article class="pcard pcard--sm" style="--x:0px;--y:183px">
+            <img class="pcard__img" src="assets/img/card-fashionlaura.webp" alt="Black turtleneck with a long white skirt" loading="lazy">
+            <div class="pcard__shade"></div>
+            <img class="pcard__brand" src="assets/svg/brand-fashionlaura.svg" alt="FashionLaura" style="width:132px;top:28px">
+            <div class="pcard__info">
+              <h3>Solid Color Buttoned Cardigan</h3>
+              <div class="pcard__row">
+                <p class="price">$73.55 <s>$88.95</s></p>
+                <span class="swatches"><i style="--c:#A76100"></i><i class="on" style="--c:#131217"></i><i class="w" style="--c:#fff"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="pcard pcard--lg" style="--x:296px;--y:118px">
+            <img class="pcard__img pcard__img--zara" src="assets/img/card-zara.webp" alt="Cream blouse with a long black skirt" loading="lazy">
+            <div class="pcard__shade"></div>
+            <img class="pcard__brand" src="assets/svg/brand-zara.svg" alt="ZARA" style="width:56px;top:35px">
+            <div class="pcard__info">
+              <h3>Solid Color Buttoned Cardigan</h3>
+              <div class="pcard__row">
+                <p class="price">$73.55 <s>$88.95</s></p>
+                <span class="swatches"><i style="--c:#A76100"></i><i class="on" style="--c:#131217"></i><i class="w" style="--c:#fff"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <div class="phone" style="--x:642px;--y:0px">
+            <div class="phone__screen">
+              <img class="phone__main" src="assets/img/phone-product.webp" alt="Ivory two piece blazer set with a white handbag">
+              <div class="phone__thumbs">
+                <img src="assets/img/phone-product.webp" alt="">
+                <img src="assets/img/phone-thumb-2.webp" alt="">
+                <img src="assets/img/phone-thumb-3.webp" alt="">
+                <img src="assets/img/phone-thumb-4.webp" alt="">
+                <img src="assets/img/phone-product.webp" alt="">
+              </div>
+              <div class="phone__info">
+                <h3>Slim Fit V Neck Blazer Two<br>Piece Set</h3>
+                <p class="phone__price">$109.00 CAD <span>-40%</span></p>
+                <hr>
+                <div class="phone__opt">
+                  <span>Color:</span>
+                  <span class="swatches swatches--lg"><i style="--c:#A76100"></i><i class="on" style="--c:#131217"></i><i class="w" style="--c:#fff"></i></span>
+                </div>
+                <div class="phone__opt">
+                  <span>Size:</span>
+                  <span class="sizes"><i>S</i><i>M</i><i>L</i><i class="on">XL</i></span>
+                </div>
+              </div>
+            </div>
+            <img class="phone__frame" src="assets/img/phone-frame.webp" alt="" aria-hidden="true">
+          </div>
+
+          <article class="pcard pcard--lg" style="--x:1058px;--y:118px">
+            <img class="pcard__img" src="assets/img/card-fashion-focused.webp" alt="Olive off-shoulder knit with a long black skirt" loading="lazy">
+            <div class="pcard__shade"></div>
+            <img class="pcard__brand" src="assets/svg/brand-fashion-focused.svg" alt="Fashion Focused" style="width:140px;top:44px">
+            <div class="pcard__info" style="top:450px">
+              <h3>Solid Color Buttoned Cardigan</h3>
+              <div class="pcard__row">
+                <p class="price">$73.55 <s>$88.95</s></p>
+                <span class="swatches"><i style="--c:#A76100"></i><i class="on" style="--c:#131217"></i><i class="w" style="--c:#fff"></i></span>
+              </div>
+            </div>
+          </article>
+
+          <article class="pcard pcard--sm" style="--x:1426px;--y:183px">
+            <img class="pcard__img" src="assets/img/card-dresslova.webp" alt="Black wrap blouse with white satin skirt" loading="lazy">
+            <div class="pcard__shade"></div>
+            <span class="pcard__brand pcard__brand--text">DRESSLOVA</span>
+            <div class="pcard__info" style="top:354px">
+              <h3>Satin Elegant Shirt Dress Set</h3>
+              <div class="pcard__row">
+                <p class="price">$58.95 <s>$73.95</s></p>
+                <span class="swatches"><i class="on" style="--c:#131217"></i><i style="--c:#FFA629"></i><i style="--c:#FF3636"></i></span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BENTO FEATURES ============ -->
+    <section class="bento-section" id="features">
+      <div class="bento-section__glow" aria-hidden="true"></div>
+      <div class="container bento">
+
+        <article class="tile tile--filters reveal">
+          <h3>Modesty Filters</h3>
+          <p><span>Unique modesty</span> scoring system respects your coverage <span>preferences and personal values</span></p>
+          <button class="switch" id="modestySwitch" role="switch" aria-checked="false" aria-label="Toggle modesty filters"><span></span></button>
+        </article>
+
+        <article class="tile tile--ai reveal">
+          <div class="tile--ai__bg" aria-hidden="true"></div>
+          <div class="tile--ai__glass" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="tile--ai__chip" aria-hidden="true">AI-Powered Analysis</div>
+          <div class="tile--ai__bar" aria-hidden="true"></div>
+          <div class="tile__text">
+            <h3>AI-Powered Analysis</h3>
+            <p>Ultra-accurate clothing detection and style recognition powered by advanced computer vision</p>
+          </div>
+        </article>
+
+        <article class="tile tile--photo reveal">
+          <img class="tile--photo__img" src="assets/img/bento-photo.webp" alt="Woman in a houndstooth top and black satin skirt" loading="lazy">
+          <img class="tile--photo__logo" src="assets/svg/logo-hanger.svg" alt="Slate" width="125" height="48">
+        </article>
+
+        <article class="tile tile--discovery reveal">
+          <div class="tile__text">
+            <h3>Instant Discovery</h3>
+            <p>Build your dream wardrobe with saved items and curated collections</p>
+          </div>
+          <div class="tile--discovery__art">
+            <img src="assets/img/bento-boxes.webp" alt="" loading="lazy">
+          </div>
+        </article>
+
+        <article class="tile tile--collections reveal">
+          <div class="tile--collections__text">
+            <div class="tile__text">
+              <h3>Personal Collections</h3>
+              <p>Build your dream wardrobe with saved items and curated collections</p>
+            </div>
+            <a href="#get-started" class="btn">Get Started</a>
+          </div>
+          <div class="carousel" id="collections" aria-roledescription="carousel" aria-label="Saved collection">
+            <div class="carousel__stage">
+              <figure class="carousel__item"><img src="assets/img/dress-maroon-polo.webp" alt="Maroon polo knit dress" loading="lazy"></figure>
+              <figure class="carousel__item"><img src="assets/img/dress-navy-mini.webp" alt="Navy fitted mini dress" loading="lazy"></figure>
+              <figure class="carousel__item"><img src="assets/img/dress-navy-polo.webp" alt="Navy polo collar dress" loading="lazy"></figure>
+              <figure class="carousel__item"><img src="assets/img/dress-cream.webp" alt="Cream fitted mini dress" loading="lazy"></figure>
+              <figure class="carousel__item"><img src="assets/img/dress-navy-bow.webp" alt="Navy pleated dress with a bow collar" loading="lazy"></figure>
+            </div>
+            <div class="carousel__dots" role="tablist">
+              <button role="tab" aria-label="Item 1"></button>
+              <button role="tab" aria-label="Item 2"></button>
+              <button role="tab" aria-label="Item 3"></button>
+              <button role="tab" aria-label="Item 4"></button>
+              <button role="tab" aria-label="Item 5"></button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="how" id="how-it-works">
+      <header class="section-head reveal">
+        <h2>How <span class="text-fill-pink">Slate</span> Works</h2>
+        <p>Every photo stays private in your account while we run a style analysis just for you.</p>
+      </header>
+
+      <div class="container steps" id="steps">
+        <div class="steps__line" aria-hidden="true"><div class="steps__progress" id="stepsProgress"></div></div>
+
+        <!-- 01 -->
+        <div class="step step--right">
+          <div class="step__num">01</div>
+          <div class="step__body reveal">
+            <div class="step__card" data-fit="464"><div class="step__art">
+              <div class="step__card-bg" aria-hidden="true"></div>
+              <div class="s1-box">
+                <div class="s1-drop"><img src="assets/svg/icon-upload.svg" alt="" width="24" height="24"></div>
+                <span>Upload here</span>
+              </div>
+              <img class="s1-thumb" src="assets/img/top-draped.webp" alt="Burgundy draped sleeveless top" loading="lazy">
+              <img class="s1-hand" src="assets/svg/icon-hand.svg" alt="" width="24" height="24">
+            </div></div>
+            <h3>Upload</h3>
+            <p>Drop a clothing item you love that isn’t modest enough for you</p>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="step step--left">
+          <div class="step__num">02</div>
+          <div class="step__body reveal">
+            <div class="step__card" data-fit="464"><div class="step__art">
+              <div class="step__card-bg" aria-hidden="true"></div>
+              <div class="s2-frame s2-frame--a">
+                <img src="assets/img/top-draped.webp" alt="Original sleeveless draped top" loading="lazy">
+                <i class="s2-shine" style="left:-28px;top:0"></i><i class="s2-shine" style="left:-19px;top:67px"></i><i class="s2-shine" style="left:-8px;top:117px"></i>
+              </div>
+              <div class="s2-link" aria-hidden="true"><span><img src="assets/svg/icon-convert.svg" alt="" width="17" height="17"></span></div>
+              <div class="s2-frame s2-frame--b"><img src="assets/img/top-wrap.webp" alt="Modest wrap blouse with sleeves" loading="lazy"></div>
+            </div></div>
+            <h3>Analyze</h3>
+            <p>We help you find the modest version of the uploaded outfit</p>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="step step--right">
+          <div class="step__num">03</div>
+          <div class="step__body reveal">
+            <div class="step__card" data-fit="464"><div class="step__art">
+              <div class="step__card-bg" aria-hidden="true"></div>
+              <i class="s3-glow" aria-hidden="true"></i>
+              <img class="s3-model" src="assets/img/model-maroon.webp" alt="Woman in a fitted burgundy long-sleeve top" loading="lazy">
+              <span class="s3-heart" aria-hidden="true"><svg viewBox="0 0 20 20" width="20" height="20"><path d="M10 17.2s-6.8-4-6.8-8.8A3.9 3.9 0 0 1 10 6a3.9 3.9 0 0 1 6.8 2.4c0 4.8-6.8 8.8-6.8 8.8Z" fill="#fff" fill-opacity=".9"/></svg></span>
+              <div class="s3-colors" aria-hidden="true"><span class="swatches"><i style="--c:#3265D4"></i><i style="--c:#A76100"></i><i class="on" style="--c:#131217"></i><i class="w" style="--c:#fff"></i></span></div>
+              <div class="s3-creator">
+                <img src="assets/img/avatar-hero-3.webp" alt="" width="44" height="44">
+                <div><strong>Nadia Rahman</strong><span><img src="assets/svg/rating-star.svg" alt="" width="14" height="14"> 4.9</span></div>
+              </div>
+            </div></div>
+            <h3>Discover</h3>
+            <p>Slate finds you the modest version of the same outfit</p>
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div class="step step--left">
+          <div class="step__num">04</div>
+          <div class="step__body reveal">
+            <div class="step__card" data-fit="464"><div class="step__art">
+              <div class="step__card-bg" aria-hidden="true"></div>
+              <div class="s4-shop">
+                <div class="s4-grid s4-grid--2">
+                  <span><img src="assets/img/shop-1.webp" alt="Cream pleated dress" loading="lazy" style="width:63.7px;left:29.75px"></span>
+                  <span><img src="assets/img/shop-2.webp" alt="Black wrap dress" loading="lazy" style="width:108.8px;left:7.26px"></span>
+                </div>
+                <div class="s4-grid s4-grid--3">
+                  <span><img src="assets/img/shop-3.webp" alt="Black button-down midi dress" loading="lazy" style="width:44.1px;left:18.14px;top:6.53px"></span>
+                  <span><img src="assets/img/shop-4.webp" alt="Maroon polo dress" loading="lazy" style="width:53.3px;left:13.06px"></span>
+                  <span><img src="assets/img/shop-5.webp" alt="Navy dress with bow collar" loading="lazy" style="width:53.9px;left:13.06px;top:2.18px"></span>
+                </div>
+                <div class="s4-store">
+                  <img class="s4-store__logo" src="assets/img/asos.webp" alt="" width="41" height="41">
+                  <div>
+                    <strong>Asos <img src="assets/svg/icon-verified.svg" alt="Verified" width="11" height="11"></strong>
+                    <span>The online fashion store</span>
+                  </div>
+                  <a href="#get-started" class="s4-store__btn">Shop now</a>
+                </div>
+              </div>
+            </div></div>
+            <h3>Shop</h3>
+            <p>Shop from a collection of 30,000+ personalized outfit selections</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="reviews" id="testimonials">
+      <div class="reviews__track" id="reviewsTrack" tabindex="0" aria-label="Customer reviews">
+        <article class="review">
+          <div class="stars" aria-label="3 out of 5 stars"><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote>“I used to spend HOURS trying to find modest outfits. Slate does it in seconds.”</blockquote>
+          <footer class="review__author"><img src="assets/img/avatar-sarah.webp" alt="" width="48" height="48"><div><strong>Sarah Thompson</strong><span>Boutique owner, Toronto</span></div></footer>
+        </article>
+        <article class="review review--featured">
+          <div class="review__glow" aria-hidden="true"></div>
+          <div class="stars" aria-label="4 out of 5 stars"><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote>“As someone who dresses modestly, shopping always felt frustrating. Slate made it simple, affordable, and actually fun”</blockquote>
+          <footer class="review__author"><img src="assets/img/avatar-nadia.webp" alt="" width="48" height="48"><div><strong>Nadia Rahman</strong><span>Handmade jewelry seller, Scarborough</span></div></footer>
+        </article>
+        <article class="review">
+          <div class="stars" aria-label="5 out of 5 stars"><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg></div>
+          <blockquote>“Used Slate to find my outfit for church. Before that it was a complete struggle”</blockquote>
+          <footer class="review__author"><img src="assets/img/avatar-hannah.webp" alt="" width="48" height="48"><div><strong>Hannah</strong></div></footer>
+        </article>
+        <article class="review">
+          <div class="stars" aria-label="4 out of 5 stars"><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+          <blockquote>“Slate made mainstream brands work for my modest style”</blockquote>
+          <footer class="review__author"><img src="assets/img/avatar-nada.webp" alt="" width="48" height="48"><div><strong>Nada Aly</strong></div></footer>
+        </article>
+        <article class="review">
+          <div class="stars" aria-label="5 out of 5 stars"><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg><svg class="on"><use href="#i-star"/></svg></div>
+          <blockquote>“Love that Slate works for women across different faiths and styles.”</blockquote>
+          <footer class="review__author"><img src="assets/img/avatar-jasleen.webp" alt="" width="48" height="48"><div><strong>Jasleen Gill</strong><span>Business owner, Brampton</span></div></footer>
+        </article>
+      </div>
+
+      <div class="container reviews__controls">
+        <div class="reviews__btns">
+          <button class="circle-btn" id="reviewsPrev" aria-label="Previous reviews"><svg width="16" height="16" style="transform:rotate(90deg)"><use href="#i-chevron"/></svg></button>
+          <button class="circle-btn" id="reviewsNext" aria-label="Next reviews"><svg width="16" height="16" style="transform:rotate(-90deg)"><use href="#i-chevron"/></svg></button>
+        </div>
+        <span class="reviews__divider" aria-hidden="true"></span>
+        <p>Trusted by millions of women across Muslim, Christian, and other faith communities.</p>
+      </div>
+    </section>
+
+    <!-- ============ SUPPORT ============ -->
+    <section class="support" id="support">
+      <header class="section-head reveal">
+        <p class="eyebrow-help"><span class="text-fill-help">Need Help?</span></p>
+        <h2>Dedicated support for<br>every Slate shopper</h2>
+      </header>
+
+      <div class="support__card reveal">
+        <dl class="support__info">
+          <div><dt>Support</dt><dd><a href="mailto:hello@slatefashion.app">hello@slatefashion.app</a></dd></div>
+          <div><dt>Follow us</dt><dd><a href="#">@slate.style</a></dd></div>
+          <div><dt>Call us</dt><dd><a href="tel:+14155550199">+1 (415) 555-0199</a></dd></div>
+        </dl>
+
+        <div class="support__form-wrap">
+          <div class="support__form-bg" aria-hidden="true"></div>
+          <form class="support__form" id="contactForm" novalidate>
+            <label class="sr-only" for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" placeholder="Name" autocomplete="name" required>
+            <label class="sr-only" for="cf-email">Email</label>
+            <input id="cf-email" name="email" type="email" placeholder="Email" autocomplete="email" required>
+            <label class="sr-only" for="cf-msg">Your inquiry</label>
+            <textarea id="cf-msg" name="message" placeholder="Your inquiry.." required></textarea>
+            <div class="support__form-foot">
+              <button type="submit" class="btn">Send Message</button>
+              <p class="support__status" id="formStatus" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq">
+      <div class="container faq__inner">
+        <header class="faq__head reveal">
+          <h2>Frequently asked<br>questions</h2>
+          <p>Every photo stays private in your account while Slate Vision™ runs a style analysis just for you.</p>
+        </header>
+
+        <div class="faq__list" id="faqList">
+          <div class="faq__item is-open">
+            <button class="faq__q" aria-expanded="true" aria-controls="faq-a1" id="faq-q1">
+              <span>What plans does Slate offer?</span>
+              <i class="faq__icon"><svg width="16" height="16"><use href="#i-chevron"/></svg></i>
+            </button>
+            <div class="faq__a" id="faq-a1" role="region" aria-labelledby="faq-q1"><div><p>Slate is free to start, no credit card required. You can upload outfits, get modest matches and save collections at no cost, with optional premium features for frequent shoppers.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">
+              <span>Who can see my uploads?</span>
+              <i class="faq__icon"><svg width="16" height="16"><use href="#i-chevron"/></svg></i>
+            </button>
+            <div class="faq__a" id="faq-a2" role="region" aria-labelledby="faq-q2"><div><p>Only you. Every photo stays private in your account while Slate Vision™ runs a style analysis just for you.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">
+              <span>How does Slate’s AI work?</span>
+              <i class="faq__icon"><svg width="16" height="16"><use href="#i-chevron"/></svg></i>
+            </button>
+            <div class="faq__a" id="faq-a3" role="region" aria-labelledby="faq-q3"><div><p>Slate Vision™ detects the garment’s cut, colour and fabric, then scores coverage against your modesty preferences to find the closest modest match across 60,000+ brands.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">
+              <span>Which brands and stores does Slate search?</span>
+              <i class="faq__icon"><svg width="16" height="16"><use href="#i-chevron"/></svg></i>
+            </button>
+            <div class="faq__a" id="faq-a4" role="region" aria-labelledby="faq-q4"><div><p>Both mainstream and modest fashion brands, from high-street names to independent boutiques, so you can shop the looks you love at prices that work for you.</p></div></div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-a5" id="faq-q5">
+              <span>Can I set my own modesty preferences?</span>
+              <i class="faq__icon"><svg width="16" height="16"><use href="#i-chevron"/></svg></i>
+            </button>
+            <div class="faq__a" id="faq-a5" role="region" aria-labelledby="faq-q5"><div><p>Yes. Modesty Filters let you choose sleeve length, neckline, hemline, fit and sheerness, and every recommendation is scored against your coverage preferences and personal values.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="get-started">
+    <div class="container footer__cta">
+      <div class="cta reveal">
+        <h2>Ready to <em>Discover</em><br>Your Style?</h2>
+        <p>Take our quick style quiz and unlock personalized modest fashion recommendations curated just for you.</p>
+        <div class="cta__actions">
+          <a href="#" class="btn">Find your style</a>
+          <span class="cta__note">Free to start <i>•</i> No credit card required</span>
+        </div>
+      </div>
+      <div class="scan reveal">
+        <h3>Scan Me</h3>
+        <img src="assets/img/qr-code.webp" alt="QR code to download the Slate app" width="236" height="236" loading="lazy">
+        <p><span>1M+ people</span> <img src="assets/svg/icon-trust-star.svg" alt="" width="25" height="24"> <strong>Trust Us</strong></p>
+      </div>
+    </div>
+
+    <div class="container footer__main">
+      <div class="footer__brand">
+        <img src="assets/svg/logo-wordmark.svg" alt="Slate" width="65" height="23">
+        <p>AI-powered modest<br>fashion discovery</p>
+      </div>
+      <nav class="footer__cols" aria-label="Footer">
+        <div>
+          <h4>Product</h4>
+          <a href="#how-it-works">How it works</a>
+          <a href="#features">Features</a>
+          <a href="#testimonials">Benefits</a>
+          <a href="#get-started">Get started</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#support">Contact</a>
+          <a href="#faq">Faqs</a>
+          <a href="#get-started">Download App</a>
+        </div>
+        <div>
+          <h4>Socials</h4>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>All rights reserved. © 2026 Slate</p>
+      <p><a href="#">Privacy Policy</a> <i>•</i> <a href="#">Cookies</a></p>
+    </div>
+
+    <div class="footer__mark" aria-hidden="true"><img src="assets/svg/watermark.svg" alt=""></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

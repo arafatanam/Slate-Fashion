@@ -45,7 +45,12 @@
   }
 
   window.addEventListener('hashchange', function () { render(indexFromHash()); });
-  document.getElementById('backBtn').addEventListener('click', function () { go(current - 1); });
+  document.getElementById('backBtn').addEventListener('click', function () {
+    // The checklist moves on by itself, so stepping back onto it would bounce straight forward again
+    var to = current - 1;
+    if (screens[to].dataset.screen === 'curating') to--;
+    go(to);
+  });
   document.querySelectorAll('[data-next]').forEach(function (b) {
     b.addEventListener('click', function () { go(current + 1); });
   });
@@ -193,7 +198,7 @@
         checklistItems[n++].classList.add('is-done');
         checklistTimer = setTimeout(tick, 1100);
       } else {
-        go(current + 1);
+        location.replace('#' + (current + 2)); // Keeps the checklist out of the browser's back history
       }
     })();
   }

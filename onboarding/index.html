@@ -275,7 +275,111 @@
         </button>
       </section>
 
-      <!-- 10. Pricing -->
+      <!-- 10. Overpaying -->
+      <section class="screen" data-screen="overpaying" hidden>
+        <div class="head">
+          <h2>You’re overpaying for <br />modest fashion</h2>
+          <p>Around <b>$200/month</b>, based on your shopping habits.</p>
+        </div>
+        <div class="panel panel--fixes">
+          <h3>Slate fixes that</h3>
+          <div>
+            <span>✨ AI-powered matching</span>
+            <span>💰 Price comparison, done for you.</span>
+          </div>
+        </div>
+        <button type="button" class="btn cta" data-next>
+          Stop overpaying <svg width="20" height="20"><use href="#i-arrow" /></svg>
+        </button>
+      </section>
+
+      <!-- 11. Did you know -->
+      <section class="screen" data-screen="know" hidden>
+        <div class="head">
+          <h2>Slate members find 3x more pieces <br />that match their values</h2>
+          <p>That’s <b class="fill-deep">144 hours/year</b>, you’ll never get back</p>
+        </div>
+        <div class="panel panel--know">
+          <h3>Did you know?</h3>
+          <img src="assets/icon-quote.webp" alt="" width="21" height="18" />
+          <blockquote>Without the right tools, you’re missing out on pieces <br />that could be perfect for you</blockquote>
+          <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
+        </div>
+        <button type="button" class="btn cta" data-next>
+          See what you’re missing <svg width="20" height="20"><use href="#i-arrow" /></svg>
+        </button>
+      </section>
+
+      <!-- 12. Modest shouldn't cost more -->
+      <section class="screen" data-screen="cost" hidden>
+        <div class="head">
+          <h2>Modest shouldn’t cost <br />more.</h2>
+          <p>Same brands. Better prices. Finally.</p>
+        </div>
+        <button type="button" class="btn cta" data-next>
+          Continue <svg width="20" height="20"><use href="#i-arrow" /></svg>
+        </button>
+      </section>
+
+      <!-- 13. Curating done -->
+      <section class="screen" data-screen="finish" hidden>
+        <div class="head">
+          <h2>Curating your style <br />profile...</h2>
+          <p>This will only take a moment</p>
+        </div>
+        <button type="button" class="btn cta" data-next>
+          Continue <svg width="20" height="20"><use href="#i-arrow" /></svg>
+        </button>
+      </section>
+
+      <!-- 14. Curating checklist (moves on by itself) -->
+      <section class="screen" data-screen="curating" hidden>
+        <div class="head">
+          <h2>Curating your style profile</h2>
+          <p>This will only take a moment</p>
+        </div>
+        <ul class="checklist" id="checklist" aria-live="polite">
+          <li>
+            <span class="checklist__icon"><svg width="20" height="20"><use href="#i-check" /></svg></span>
+            Analyzing your style preferences
+          </li>
+          <li>
+            <span class="checklist__icon"><img src="assets/icon-search.webp" alt="" style="width:17px;height:17px" /><svg width="20" height="20"><use href="#i-check" /></svg></span>
+            Searching modest fashion catalog
+          </li>
+          <li>
+            <span class="checklist__icon"><img src="assets/icon-values.webp" alt="" style="width:19.25px;height:17.5px" /><svg width="20" height="20"><use href="#i-check" /></svg></span>
+            Matching with your values
+          </li>
+          <li>
+            <span class="checklist__icon"><img src="assets/icon-bolt.webp" alt="" style="width:11.25px;height:17.25px" /><svg width="20" height="20"><use href="#i-check" /></svg></span>
+            Curating personalized picks
+          </li>
+        </ul>
+      </section>
+
+      <!-- 15. Picks ready -->
+      <section class="screen" data-screen="ready" hidden>
+        <div class="head">
+          <h2>Your Curated Picks Are Ready</h2>
+          <p>We found <b class="fill-pink">48</b> items matching your style. Sign in to unlock your <br />personalized collection.</p>
+        </div>
+        <div class="deck-fit" data-deck>
+          <div class="deck deck--locked">
+            <figure class="look" style="--i: 0; --r: 7deg"><img src="assets/checker.webp" alt="" /><figcaption>⚪ Minimalist</figcaption></figure>
+            <figure class="look" style="--i: 1; --r: -5deg"><img src="assets/checker.webp" alt="" /><figcaption>⚪ Minimalist</figcaption></figure>
+            <figure class="look" style="--i: 2; --r: -5deg"><img src="assets/checker.webp" alt="" /><figcaption>⚪ Minimalist</figcaption></figure>
+            <figure class="look" style="--i: 3; --r: 7deg"><img src="assets/checker.webp" alt="" /><figcaption>⚪ Minimalist</figcaption></figure>
+            <figure class="look" style="--i: 4; --r: -5deg"><img src="assets/checker.webp" alt="" /><figcaption>⚪ Minimalist</figcaption></figure>
+            <div class="ticket"><img src="assets/icon-lock.webp" alt="Locked" class="ticket__lock" /></div>
+          </div>
+        </div>
+        <button type="button" class="btn cta" data-next>
+          See what you’re missing <svg width="20" height="20"><use href="#i-arrow" /></svg>
+        </button>
+      </section>
+
+      <!-- 16. Pricing -->
       <section class="screen" data-screen="pricing" hidden>
         <div class="head">
           <h2>Save on your trip <svg aria-label="to" role="img"><use href="#i-arrow" /></svg> offer expires soon</h2>
@@ -303,110 +407,6 @@
             Subscribe <svg width="20" height="20"><use href="#i-arrow" /></svg>
           </button>
         </div>
-      </section>
-
-      <!-- 11. Overpaying -->
-      <section class="screen" data-screen="overpaying" hidden>
-        <div class="head">
-          <h2>You’re overpaying for <br />modest fashion</h2>
-          <p>Around <b>$200/month</b>, based on your shopping habits.</p>
-        </div>
-        <div class="panel panel--fixes">
-          <h3>Slate fixes that</h3>
-          <div>
-            <span>✨ AI-powered matching</span>
-            <span>💰 Price comparison, done for you.</span>
-          </div>
-        </div>
-        <button type="button" class="btn cta" data-next>
-          Stop overpaying <svg width="20" height="20"><use href="#i-arrow" /></svg>
-        </button>
-      </section>
-
-      <!-- 12. Did you know -->
-      <section class="screen" data-screen="know" hidden>
-        <div class="head">
-          <h2>Slate members find 3x more pieces <br />that match their values</h2>
-          <p>That’s <b class="fill-deep">144 hours/year</b>, you’ll never get back</p>
-        </div>
-        <div class="panel panel--know">
-          <h3>Did you know?</h3>
-          <img src="assets/icon-quote.webp" alt="" width="21" height="18" />
-          <blockquote>Without the right tools, you’re missing out on pieces <br />that could be perfect for you</blockquote>
-          <div class="dots" aria-hidden="true"><i></i><i></i><i></i></div>
-        </div>
-        <button type="button" class="btn cta" data-next>
-          See what you’re missing <svg width="20" height="20"><use href="#i-arrow" /></svg>
-        </button>
-      </section>
-
-      <!-- 13. Picks ready -->
-      <section class="screen" data-screen="ready" hidden>
-        <div class="head">
-          <h2>Your Curated Picks Are Ready</h2>
-          <p>We found <b class="fill-pink">48</b> items matching your style. Sign in to unlock your <br />personalized collection.</p>
-        </div>
-        <div class="deck-fit" data-deck>
-          <div class="deck deck--locked">
-            <figure class="look" style="--i: 0; --r: 7deg"><img src="assets/checker.webp" alt="" /><figcaption>⚪ Minimalist</figcaption></figure>
-            <figure class="look" style="--i: 1; --r: -5deg"><img src="assets/checker.webp" alt="" /><figcaption>⚪ Minimalist</figcaption></figure>
-            <figure class="look" style="--i: 2; --r: -5deg"><img src="assets/checker.webp" alt="" /><figcaption>⚪ Minimalist</figcaption></figure>
-            <figure class="look" style="--i: 3; --r: 7deg"><img src="assets/checker.webp" alt="" /><figcaption>⚪ Minimalist</figcaption></figure>
-            <figure class="look" style="--i: 4; --r: -5deg"><img src="assets/checker.webp" alt="" /><figcaption>⚪ Minimalist</figcaption></figure>
-            <div class="ticket"><img src="assets/icon-lock.webp" alt="Locked" class="ticket__lock" /></div>
-          </div>
-        </div>
-        <button type="button" class="btn cta" data-next>
-          See what you’re missing <svg width="20" height="20"><use href="#i-arrow" /></svg>
-        </button>
-      </section>
-
-      <!-- 14. Modest shouldn't cost more -->
-      <section class="screen" data-screen="cost" hidden>
-        <div class="head">
-          <h2>Modest shouldn’t cost <br />more.</h2>
-          <p>Same brands. Better prices. Finally.</p>
-        </div>
-        <button type="button" class="btn cta" data-next>
-          Continue <svg width="20" height="20"><use href="#i-arrow" /></svg>
-        </button>
-      </section>
-
-      <!-- 15. Curating checklist (moves on by itself) -->
-      <section class="screen" data-screen="curating" hidden>
-        <div class="head">
-          <h2>Curating your style profile</h2>
-          <p>This will only take a moment</p>
-        </div>
-        <ul class="checklist" id="checklist" aria-live="polite">
-          <li>
-            <span class="checklist__icon"><svg width="20" height="20"><use href="#i-check" /></svg></span>
-            Analyzing your style preferences
-          </li>
-          <li>
-            <span class="checklist__icon"><img src="assets/icon-search.webp" alt="" style="width:17px;height:17px" /><svg width="20" height="20"><use href="#i-check" /></svg></span>
-            Searching modest fashion catalog
-          </li>
-          <li>
-            <span class="checklist__icon"><img src="assets/icon-values.webp" alt="" style="width:19.25px;height:17.5px" /><svg width="20" height="20"><use href="#i-check" /></svg></span>
-            Matching with your values
-          </li>
-          <li>
-            <span class="checklist__icon"><img src="assets/icon-bolt.webp" alt="" style="width:11.25px;height:17.25px" /><svg width="20" height="20"><use href="#i-check" /></svg></span>
-            Curating personalized picks
-          </li>
-        </ul>
-      </section>
-
-      <!-- 16. Curating done -->
-      <section class="screen" data-screen="finish" hidden>
-        <div class="head">
-          <h2>Curating your style <br />profile...</h2>
-          <p>This will only take a moment</p>
-        </div>
-        <button type="button" class="btn cta" data-next>
-          Continue <svg width="20" height="20"><use href="#i-arrow" /></svg>
-        </button>
       </section>
     </main>
 

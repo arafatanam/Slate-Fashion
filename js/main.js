@@ -44,8 +44,8 @@
   function layoutLine() {
     var first = nums[0], last = nums[nums.length - 1];
     // step__num offsets are relative to their .step row, rows are relative to .steps
-    var top = first.parentElement.offsetTop + first.offsetTop + first.offsetHeight / 2;
-    var bottom = steps.offsetHeight - (last.parentElement.offsetTop + last.offsetTop + last.offsetHeight / 2);
+    var top = first.parentElement.offsetTop + first.offsetTop + 3.5;
+    var bottom = steps.offsetHeight - (last.parentElement.offsetTop + last.offsetTop) + 11.5;
     steps.style.setProperty('--line-top', top + 'px');
     steps.style.setProperty('--line-bottom', Math.max(bottom, 0) + 'px');
   }

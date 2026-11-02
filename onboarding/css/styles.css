@@ -35,8 +35,8 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; }
 :focus-visible { outline: 2px solid #7A93F8; outline-offset: 3px; }
 
 .page-bg {
-  position: absolute; z-index: -1; left: 0; right: 0; top: 0; height: 565px; pointer-events: none;
-  background: url(../assets/bg-gradient.webp) center / 100% 100% no-repeat;
+  position: absolute; z-index: -1; left: 0; right: 0; top: 0; height: max(565px, 58.85vh); pointer-events: none;
+  background: linear-gradient(transparent 90%, var(--bg)), url(../assets/bg-gradient.webp) center / 100% 100% no-repeat;
 }
 
 /* Buttons */
@@ -89,10 +89,10 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; }
    SCREENS: top of content and CTA sit at 220px / 708px on the 960px canvas
    ========================================================= */
 .screen {
-  --top: clamp(40px, 14.58vh, 140px);
+  --top: clamp(40px, 14.58vh, 240px);
   display: flex; flex-direction: column; align-items: center; gap: 44px;
   width: min(749px, 100% - var(--gutter) * 2); margin-inline: auto;
-  min-height: min(724px, max(560px, 75.4vh));
+  min-height: min(1000px, max(560px, 75.4vh));
   padding-top: var(--top); padding-bottom: 48px;
   text-align: center;
   animation: screen-in .45s var(--ease);
@@ -104,6 +104,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; }
 
 .head { display: flex; flex-direction: column; align-items: center; gap: 16px; width: min(605px, 100%); }
 .head h2 { font-size: clamp(28px, 2vw + 16px, 36px); line-height: 1.2; font-weight: 500; letter-spacing: -0.04em; }
+.head h2, .head p { text-wrap: balance; }
 .head p { font-size: clamp(17px, .5vw + 14px, 20px); line-height: 1.2; letter-spacing: -0.04em; color: rgba(0,0,0,.7); }
 .head p b { font-size: 1.6em; line-height: 1.2; font-weight: 700; color: #000; }
 .head h2 svg { display: inline-block; width: 1em; height: 1em; vertical-align: -.12em; }
@@ -126,7 +127,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; }
 .head p .fill-pink { background-image: linear-gradient(90deg, #DC6A9C, #C76FAA); }
 
 /* Welcome */
-.screen--welcome { --top: clamp(48px, 22.5vh, 216px); }
+.screen--welcome { --top: clamp(48px, 22.5vh, 340px); }
 .screen--welcome h1 { font-size: clamp(44px, 3vw + 30px, 66px); line-height: 1.2; font-weight: 500; letter-spacing: -0.04em; }
 .welcome-actions { display: flex; flex-direction: column; align-items: center; gap: 24px; width: min(387px, 100%); }
 .welcome-note { font-size: 14px; line-height: 1.5; letter-spacing: -0.01em; color: rgba(0,0,0,.9); }
@@ -161,7 +162,10 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; }
 .slider input {
   position: absolute; left: 0; right: 0; top: -10px; width: 100%; height: 32px; margin: 0;
   opacity: 0; cursor: grab;
+  -webkit-appearance: none; appearance: none; background: transparent;
 }
+.slider input::-webkit-slider-thumb { -webkit-appearance: none; width: 32px; height: 32px; }
+.slider input::-moz-range-thumb { width: 32px; height: 32px; border: 0; background: transparent; }
 .slider input:active { cursor: grabbing; }
 .slider input:focus-visible + .slider__thumb { outline: 2px solid #7A93F8; outline-offset: 2px; }
 .slider__bubble {
@@ -279,8 +283,6 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; }
   .slider-label--wide { width: auto; }
   .head br, .panel br { display: none; }
 
-  .stats { flex-direction: column; align-items: stretch; gap: 0; }
-  .stat + .stat::before { left: 0; right: 0; top: 0; bottom: auto; width: auto; height: 1px; }
   .panel--fixes { padding: 28px; }
   .panel--fixes div { flex-direction: column; gap: 16px; }
   .panel--know { padding-inline: 24px; }
@@ -294,6 +296,10 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; }
 }
 @media (max-width: 760px) {
   .deck-fit { width: calc(100% + var(--gutter) * 2); margin-inline: calc(var(--gutter) * -1); }
+}
+@media (max-width: 620px) {
+  .stats { flex-direction: column; align-items: stretch; gap: 0; }
+  .stat + .stat::before { left: 0; right: 0; top: 0; bottom: auto; width: auto; height: 1px; }
 }
 @media (max-width: 420px) {
   .welcome-bar__account span { display: none; }

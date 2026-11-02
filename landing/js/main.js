@@ -23,6 +23,7 @@
   /* ---------- Scale fixed-size artboards to their containers ---------- */
   var showcase = document.getElementById('showcase');
   var fitCards = document.querySelectorAll('[data-fit]');
+  var carouselEl = document.getElementById('collections');
 
   function fitAll() {
     var vw = doc.clientWidth;
@@ -32,6 +33,7 @@
     fitCards.forEach(function (el) {
       el.style.setProperty('--k', (el.clientWidth / Number(el.dataset.fit)).toFixed(4));
     });
+    if (carouselEl) carouselEl.style.setProperty('--ck', Math.min(1, (carouselEl.parentElement.clientWidth - 32) / 385).toFixed(4));
     layoutLine();
   }
 

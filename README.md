@@ -1,4 +1,4 @@
-# Slate Website
+# Slate Fashion
 
 Marketing site and onboarding flow for Slate, an AI-powered modest fashion discovery product.
 

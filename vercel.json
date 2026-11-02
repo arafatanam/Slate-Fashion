@@ -1,0 +1,14 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/landing", "destination": "/", "permanent": false },
+    { "source": "/landing/", "destination": "/", "permanent": false },
+    { "source": "/landing/index.html", "destination": "/", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/", "destination": "/landing/index.html" },
+    { "source": "/css/:path*", "destination": "/landing/css/:path*" },
+    { "source": "/js/:path*", "destination": "/landing/js/:path*" },
+    { "source": "/assets/:path*", "destination": "/landing/assets/:path*" }
+  ]
+}

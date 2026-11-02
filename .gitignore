@@ -1,2 +1,2 @@
-# 4x PNG design masters: kept locally, the site ships the WebP versions
-assets/*.png
+.vercel
+node_modules
